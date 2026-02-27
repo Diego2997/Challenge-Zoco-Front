@@ -27,7 +27,6 @@ export const ProfilePage = () => {
     setIsLoading(true);
     try {
       const data = await dispatch(getProfile());
-      console.log("Perfil cargado:", data);
       setProfile(data);
       setForm({
         firstName: data.firstName || "",
@@ -106,7 +105,7 @@ export const ProfilePage = () => {
 
   return (
     <div className="p-4 sm:p-6 max-w-4xl mx-auto">
-      {/* Header móvil adaptable */}
+
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-6">
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">Mi Perfil</h1>
         {!isEditing && (
@@ -120,7 +119,7 @@ export const ProfilePage = () => {
         )}
       </div>
 
-      {/* Mensajes de error/success */}
+  
       {error && (
         <div className="mb-4 p-3 bg-red-100 text-red-700 rounded-lg text-sm">
           {error}
@@ -133,17 +132,17 @@ export const ProfilePage = () => {
         </div>
       )}
 
-      {/* Tarjeta de perfil */}
+
       <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-        {/* Header con gradiente - altura reducida en móvil */}
+    
         <div className="h-24 sm:h-32 bg-gradient-to-r from-blue-500 to-purple-600"></div>
         
-        {/* Contenido */}
+
         <div className="px-4 sm:px-6 py-4">
           {!isEditing ? (
-            /* MODO VISUALIZACIÓN */
+        
             <div className="space-y-4 sm:space-y-6">
-              {/* Avatar y nombre - ajustado para móvil */}
+          
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
                 <div className="flex justify-center sm:justify-start">
                   <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gray-200 rounded-full flex items-center justify-center -mt-8 sm:-mt-12 border-4 border-white shadow-lg">
@@ -160,7 +159,7 @@ export const ProfilePage = () => {
                 </div>
               </div>
 
-              {/* Información detallada - grid responsive */}
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 <div className="border rounded-lg p-3 bg-gray-50 flex items-start gap-2">
                   <Phone size={18} className="text-gray-500 flex-shrink-0 mt-0.5" />
@@ -195,7 +194,7 @@ export const ProfilePage = () => {
                 </div>
               </div>
 
-              {/* Estadísticas - tarjetas clickeables responsive */}
+      
               <div className="grid grid-cols-2 gap-3 sm:gap-4 pt-2">
                 <div 
                   onClick={goToAddresses}
@@ -222,7 +221,7 @@ export const ProfilePage = () => {
               </div>
             </div>
           ) : (
-            /* MODO EDICIÓN */
+  
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
@@ -295,7 +294,7 @@ export const ProfilePage = () => {
                 </div>
               </div>
 
-              {/* Botones de acción - stack en móvil, inline en desktop */}
+            
               <div className="flex flex-col-reverse sm:flex-row justify-end gap-3 pt-4">
                 <button
                   type="button"

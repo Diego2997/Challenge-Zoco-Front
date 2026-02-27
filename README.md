@@ -1,16 +1,73 @@
-# React + Vite
+# Challenge Zoco - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend desarrollado para el challenge técnico.  
+Construido con React + Vite + Redux Toolkit.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Deploy
 
-## React Compiler
+La aplicación se encuentra deployada en:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 https://challenge-zoco-front.vercel.app
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Repositorio
+
+El proyecto se encuentra versionado en GitHub.
+
+https://github.com/Diego2997/Challenge-Zoco-Front.git
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- React
+- Vite
+- Redux Toolkit
+- React Router DOM
+- Lucide React
+- Yarn
+
+---
+
+## ⚙️ Variables de entorno necesarias
+
+Crear un archivo `.env` en la raíz del proyecto con la siguiente variable:
+
+```
+VITE_API_URL=https://localhost:7211/api
+```
+
+
+▶️ Ejecución local
+1️⃣ Clonar el repositorio
+
+git clone https://github.com/Diego2997/Challenge-Zoco-Front.git
+
+2️⃣ Entrar al proyecto
+cd challenge-zoco-front
+
+3️⃣ Instalar dependencias
+
+yarn install
+
+4️⃣ Ejecutar el proyecto
+
+yarn run dev
+
+La aplicación se ejecutará en: https://localhost:5173
+
+
+🧪 Consideraciones
+
+Asegurarse de que el backend esté corriendo en: https://localhost:7211
+
+Verificar que el archivo .env esté correctamente configurado.
+
+Reiniciar el servidor si se modifican variables de entorno.
+
+👨‍💻 Autor
+
+Diego Mercado
